@@ -375,7 +375,7 @@
 <script>
   const appConfig = {
     accountSid: "ACbc4134f31fad2fc6d6b3619928b7cefb",
-    flexFlowSid: "FW0f7db057bd9be6d754e448e39fe35f0e",
+    flexFlowSid: "FO7fdc7c6d7d1b1b63ef0d0154015a6687",
     startEngagementOnInit: true,
     disableLocalStorage: true,
 
@@ -384,8 +384,8 @@
   Twilio.FlexWebChat.createWebChat(appConfig).then(webchat => {
     const { manager } = webchat;
 
-    manager.strings.PredefinedChatMessageAuthorName = "Cami";
-    manager.strings.PredefinedChatMessageBody = "Hi there, I’m Cami! Your digital assistant from Camino Federal Credit Union. How may I help you?"
+    manager.strings.PredefinedChatMessageAuthorName = "Legal Bot";
+    manager.strings.PredefinedChatMessageBody = "Hi there, I’m Legal Bot! Your digital assistant from Telleria, Telleria, & Levy. How may I help you?"
 
     console.log("manager string ", manager.strings)
 
@@ -403,7 +403,7 @@
 
 
 // Changing the Welcome message
-    manager.strings.WelcomeMessage = "Camino Federal Credit Union";
+    manager.strings.WelcomeMessage = "Telleria, Telleria, & Levy";
 
 // Render WebChat
     webchat.init();
